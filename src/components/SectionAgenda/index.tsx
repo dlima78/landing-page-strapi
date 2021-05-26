@@ -4,10 +4,11 @@ import Container from 'components/Container'
 import Heading from 'components/Heading'
 
 import * as S from './styles'
+import { SectionAgendaProps } from 'types/api'
 
-const SectionAgenda = () => (
+const SectionAgenda = ({ title }: SectionAgendaProps) => (
   <Container id="agenda">
-    <Heading reverseColor>Agenda pré-lançamento</Heading>
+    <Heading reverseColor>{title}</Heading>
     <S.Text>
       <p>
         Esse é um curso extremamente vivo, estaremos lançando os módulos
